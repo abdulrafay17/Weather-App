@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+  <form class="card" action="/"  method="POST">
+    <div class="search">
+      <input type="search" name="enterCity" placeholder="Enter City Name" required />
+      <button type="submit"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="temprature">
+      <img class="temp-pic" src="<%= icon %>" alt="current weather">
+      <h1 class="degrees"><%= content %></h1>
+      <h1 class="degrees-country"><%= countryName %></h1>
+    </div>
+    <div class="conditions">
+      <div class="current-condition">
+        <div class="box1">
+          <h1 class="humidity"><i class="fas fa-tint"></i> <%= humidity %> </h1>
+          <h1 class="humidity"><i class="fas fa-tint"></i> <%= windSpeed %></h1>
+        </div>  
+        <div class="box2">
+          <h2 class="humidity-name">Humidity</h2>
+          <h2 class="humidity-name">Wind Speed</h2>
+        </div>
+      </div>
+      <div class="condition-names">
+        <select name="conditionOne" class="form-select">
+          <option value="cloud">cloud <%= cloud %></option>
+          <option value="feelslike">Feels Like <%= feelLike %></option>
+        </select>
+        <select name="conditionTwo" class="form-select">
+          <option value="visibility"><%= visiblity %></option>
+          <option value="windDegree"><%= windDegree %></option>
+          <option value="pressure"><%= pressure %></option>
+        </select>
+      </div>
+    </div>
+
+
+  </form>
+
+</body>
+
+</html>

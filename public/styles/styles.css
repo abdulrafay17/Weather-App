@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background: linear-gradient(to Bottom, gray 50%, rgb(185, 184, 184) 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 700px;
+    background: linear-gradient(-45deg, aqua, brown 70%);
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .search {
+    height: 100px;
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card .search button {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.card .search input {
+    border-radius: 25px;
+    border: none;
+    height: 50%;
+    width: 80%;
+    padding: 10px 15px;
+}
+
+.card .search i {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+.card .temprature {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .temprature .temp-pic {
+    height: 100px;
+    width: 100px;
+} 
+
+.card .temprature .degrees, .degrees-country {
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+
+.card .temprature .degrees {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.card .conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.current-condition {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1, .box2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.box2 h2 {
+    font-weight: 400;
+    color: white;
+}
+
+.card .conditions .current-condition .humidity {
+    color: white;
+    font-weight: 300;
+}
+
+.condition-names {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.condition-names .form-select {
+    font-weight: 300;
+    color: black;
+    background: linear-gradient(-45deg, aqua, brown 70%);
+    border: none;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 40%;
+    border-radius: 15px;
+}
+
+.condition-names .form-select option {
+    background: linear-gradient(-45deg, aqua, brown 70%);
+    font-size: 1rem;
+    border: 15px;
+}
